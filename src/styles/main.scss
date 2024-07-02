@@ -2,6 +2,16 @@
 @import 'fonts';
 @import 'typography';
 
+@import './blocks/header.scss';
+@import './blocks/footer';
+@import './blocks/aside';
+
 body {
   background: $c-gray;
+  margin: 0;
+  padding: 0;
 }
+
+// .container {
+//   @include page-grid;
+// }

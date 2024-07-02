@@ -1,0 +1,76 @@
+.header {
+  @include page-grid;
+  &__top {
+    display: flex;
+    gap: 88px;
+    align-items: center;
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  &__menu-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+
+    &-photo {
+      height: 300px;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      z-index: -1;
+      object-fit: cover;
+    }
+
+    p {
+      grid-column: 1/-1;
+      font-weight: 700;
+      font-size: 45px;
+      font-family: Montserrat;
+      color: black;
+      margin: 250px auto 0;
+      text-align: center;
+      text-transform: uppercase;
+      @include on-desktop {
+        font-size: 100px;
+      }
+    }
+
+    &-tickets {
+      height: 50px;
+      width: 280px;
+      border: 1px solid #1a5a4c;
+      position: relative;
+
+      p {
+
+        margin: 0;
+        font-family: IBM Plex Sans;
+        font-weight: 500;
+        font-size: 16px;
+        color: #0f0e08;
+        text-transform: uppercase;
+
+      }
+
+      button {
+        width: 50px;
+        height: 50px;
+        background-color: #1A5A4C;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+    }
+  }
+}
